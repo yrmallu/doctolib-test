@@ -4,8 +4,8 @@ class Event < ApplicationRecord
   AVAILABILITY_DAYS = 7
 
   KINDS = [
-    OPENING_KIND = 'opening'.freeze,
-    APPOINTMENT_KIND = 'appointment'.freeze
+    OPENING = 'opening'.freeze,
+    APPOINTMENT = 'appointment'.freeze
   ].freeze
 
   validates :kind, inclusion: { in: KINDS }
